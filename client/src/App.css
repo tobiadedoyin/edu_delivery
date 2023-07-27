@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+.btn {
+  color: #fff;
+  background-color: #1c1d1f;
+  width: fit-content;
+  padding: 5px 20px;
+}
+.btn:hover {
+  border-radius: 100px;
+  cursor: pointer;
+}
+/* navbar */
+.navbar > h1 {
+  margin: 10px;
+  color: rgb(47, 196, 77);
+}
+.link {
+  text-decoration: none;
+  border: 2px solid;
+  background: #1c1d1f;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+  width: 50px;
+  margin-right: 5px;
+}
+.navbar {
+  border-bottom: 2px transparent solid;
+  background: #f7f9fa;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 1.5em 0.2em;
+}
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  flex: 35%;
+}
+.navbar_logo > h1 {
+  margin: 10px;
+  color: rgb(47, 196, 77);
+}
+.navbar_input {
+  flex: 30%;
+}
+.navbar_lnk {
+  flex: 30%;
+}
+@media screen and (max-width: 1024px) {
+  /* .navbar {
+    flex-direction: column;
+  } */
+  .navbar_logo {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+  }
+  .navbar_input {
+    flex: 30%;
+  }
+  .navbar_lnk {
+    flex: 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_logo {
+    flex: 100%;
+    font-size: x-small;
+  }
+  .navbar_input {
+    flex: 100%;
+    margin-top: 15px;
+  }
+  .navbar_link {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 20px;
+  }
+}
+/* footer */
+.footer {
+  background: #f7f9fa;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.footer_logo > h1 {
+  margin: 10px;
+  color: rgb(47, 196, 77);
+  font-size: larger;
+}
+.footer_copywright {
+  margin-left: 20em;
+}
+@media screen and (max-width: 1024px) {
+  .footer_logo {
+    flex: 100%;
+    padding-left: 2px;
+  }
+  .footer_copywright {
+    flex: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer_logo {
+    flex: 100%;
+  }
+  .footer_copywright {
+    flex: 50%;
+    margin-left: 2em;
+  }
+}
+
+/* welcome */
+.container {
+  display: flex;
+  margin: 80px auto;
+  width: 80%;
+  height: fit-content;
+  background: #d1d7dc;
+  border-radius: 30px;
+}
+.word {
+  margin: auto 10px;
+  width: 40%;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.homepix {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+  padding: 30px;
+  margin-left: 100px;
+}
+.homepix > img {
+  width: 400px;
+  height: 300px;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .word {
+    flex: 100%;
+  }
+  .homepix {
+    flex: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .word {
+    flex: 100%;
+    padding-left: 80px;
+  }
+  .homepix {
+    flex: 100%;
+  }
+  .homepix > img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.formpage {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 60vh;
+  margin: 2rem auto;
+  background: #d1d7dc;
+  border-radius: 30px;
+  padding: 4rem;
+  gap: 20px;
+  overflow: scroll;
+}
+input,
+select {
+  padding: 8px 10px;
+  background-color: rgba(222, 239, 248, 0.877);
+  border: 0px transparent;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.submit__button {
+  color: #fff;
+  background-color: blue;
+  width: 200px;
+  outline: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin-left: 30%;
+}
+.submit__button:hover {
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.postContainer {
+  border: 1px solid transparent;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 10px auto;
+  height: fit-content;
+}
+.post {
+  border: 2px blue dotted;
+  border-radius: 20px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  line-height: 0.5;
+}
+.title > p {
+  font-family: monospace;
+}
+.description {
+  margin: 5px auto;
+  width: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  line-height: 1.5;
+  text-indent: 30px;
+}
